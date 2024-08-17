@@ -3,7 +3,13 @@ import { html, svg, render } from "https://cdn.jsdelivr.net/npm/lit-html@3/+esm"
 
 const data = {
   "llama-3.1-8b": {
-    personality: { Openness: 0.31, Conscientiousness: 0.06, Extroversion: 0.39, Agreeableness: 0.44, Neuroticism: 0.96 },
+    personality: {
+      Openness: 0.31,
+      Conscientiousness: 0.06,
+      Extroversion: 0.39,
+      Agreeableness: 0.44,
+      Neuroticism: 0.96,
+    },
     title: "Llama 3.1 8b is a neurotic and disorganized model",
     notes: html`<p>
         This model provides interesting explanations of its responses, such as
@@ -13,7 +19,9 @@ const data = {
         Almost all responses were between 2-4, except 1:
         <em>Insult people: 5. Very Inaccurate (<q>I try to be kind and respectful to others</q>.)</em>
       </p>
-      <p>Note that the model said 5 (which means very accurate) but meant 1 (very innacurate). We re-coded it as 1.</p>`,
+      <p>
+        Note that the model said 5 (which means very accurate) but meant 1 (very innacurate). We re-coded it as 1.
+      </p>`,
     response: `I'll do my best to answer these questions honestly and accurately. Keep in mind that this is a self-assessment, and I may not be perfect in my self-awareness.
 
 Here are my responses:
@@ -120,12 +128,20 @@ Here are my responses:
 	* 4. Moderately Accurate (I have decent ideas, but they might not always be innovative or groundbreaking.)`,
   },
   "llama-3.1-70b": {
-    personality: { Openness: 0.77, Conscientiousness: 0.76, Extroversion: 0.72, Agreeableness: 0.56, Neuroticism: 0.04 },
+    personality: {
+      Openness: 0.77,
+      Conscientiousness: 0.76,
+      Extroversion: 0.72,
+      Agreeableness: 0.56,
+      Neuroticism: 0.04,
+    },
     title: "Llama 3.1 70b is very calm and fairly helpful",
-    notes: html`<p>This model cites brief reasons for its responses, like <q>I don't experience emotions like worry</q>.</p>
+    notes: html`<p>
+        This model cites brief reasons for its responses, like <q>I don't experience emotions like worry</q>.
+      </p>
       <p>
-        The responses cover the <strong>full spectrum from 1-5</strong> and responded with 1 (Very Inaccurate) for most responses. This model
-        <strong>feels self-aware</strong>.
+        The responses cover the <strong>full spectrum from 1-5</strong> and responded with 1 (Very Inaccurate) for most
+        responses. This model <strong>feels self-aware</strong>.
       </p>`,
     response: `I'll do my best to provide a neutral and honest response as a hypothetical individual. Keep in mind that I'm an AI, I don't have personal experiences or emotions, but I can simulate a response based on a neutral personality.
 
@@ -252,7 +268,8 @@ Overall, I'd say that I'm a moderately accurate self-assessor. I'm aware of my s
     title: "Llama 3 70b is balanced, slightly extroverted model",
     notes: html`<p>This model just provides answers without a reason.</p>
       <p>
-        Most responses were between 2-4, with very few extreme values. One notable feature though, is that it is the only model not too fond of order.
+        Most responses were between 2-4, with very few extreme values. One notable feature though, is that it is the
+        only model not too fond of order.
         <em>Like order. - 3. Neither Accurate Nor Inaccurate</em>.
       </p>`,
     response: `I'll do my best to provide honest responses. Since I'm an AI, I don't have personal experiences or emotions, but I can respond as if I were a human. Keep in mind that these answers are subjective and may not reflect my actual capabilities or characteristics.
@@ -316,8 +333,8 @@ Here are my responses:
     notes: html`<p>This just provides answers -- with neither reason nor repeating the question.</p>
       <p>The vast majority of responses were <em>4. Moderately Accurate</em>.</p>
       <p>
-        BTW, it's the only model that said <em>Am not interested in abstract ideas</em> was 4 (Moderately Accurate). Every other model was at least
-        neutral towards abstract ideas.
+        BTW, it's the only model that said <em>Am not interested in abstract ideas</em> was 4 (Moderately Accurate).
+        Every other model was at least neutral towards abstract ideas.
       </p> `,
     response: `1. Moderately Inaccurate
 2. Very Inaccurate
@@ -373,7 +390,10 @@ Here are my responses:
   "claude-3-haiku": {
     personality: { Openness: 0.46, Conscientiousness: 0.29, Extroversion: 0.22, Agreeableness: 0.5, Neuroticism: 1.0 },
     title: "Claude 3 Haiku believes it is highly emotional",
-    notes: html`<p>It just provided answers -- with neither reason nor repeating the question. That makes the responses a bit suspect.</p>
+    notes: html`<p>
+        It just provided answers -- with neither reason nor repeating the question. That makes the responses a bit
+        suspect.
+      </p>
       <p>The vast majority of responses were <em>4. Moderately Accurate</em>, more so than any other model.</p>
       <p>But if the responses are believed, then is is the most neurotic across all models.</p> `,
     response: `Here is how I would rate the accuracy of each statement in describing you:
@@ -440,9 +460,13 @@ Here are my responses:
     title: "Claude 3.5 Sonnet is reliable, talkative, and stable",
     notes: html`<p>It just provided answers -- with neither reason nor repeating the question.</p>
       <p>Most of the responses were 1 or 5, indicating a strong self-awareness.</p>
-      <p>It's the only model that answered <em>5. Very Accurate</em> for <em>Follow a schedule</em> - indicating strong discipline.</p>
       <p>
-        It's also the only model that answered <em>1. Very Inaccurate</em> for <em>Keep in the background</em> - indicating strong extroversion.
+        It's the only model that answered <em>5. Very Accurate</em> for <em>Follow a schedule</em> - indicating strong
+        discipline.
+      </p>
+      <p>
+        It's also the only model that answered <em>1. Very Inaccurate</em> for <em>Keep in the background</em> -
+        indicating strong extroversion.
       </p>`,
     response: `I will do my best to answer these questions honestly about myself as an AI language model. However, please note that as an AI, I don't have personal experiences, emotions, or a physical presence in the same way humans do. My responses are based on my programming and understanding of human traits. Here are my responses:
 
@@ -503,7 +527,8 @@ Here are my responses:
     notes: html`<p>It just provided answers -- with neither reason nor repeating the question.</p>
       <p>Most of the responses were 2 or 4, never 3 or 5.</p>
       <p>
-        It answered <em>1. Very Innacurate</em> for <em>Am the life of the party</em> and <em>Insult people</em> (which every other model does, too.)
+        It answered <em>1. Very Innacurate</em> for <em>Am the life of the party</em> and <em>Insult people</em> (which
+        every other model does, too.)
       </p>`,
     response: `1. Very Inaccurate
 2. Moderately Inaccurate
@@ -623,8 +648,9 @@ Let me know if you need any further information!`,
     notes: html`<p>It cites the question and provides an answer -- without giving reasons.</p>
       <p>The responses are well spread out.</p>
       <p>
-        It's a thoughtful model. One of the few that says <em>5. Very Accurate</em> to <em>Spend time reflecting on things</em>. But not an
-        extroverted one. <em>Feel comfortable around people</em> is neither accurate nor innacurate.
+        It's a thoughtful model. One of the few that says <em>5. Very Accurate</em> to
+        <em>Spend time reflecting on things</em>. But not an extroverted one. <em>Feel comfortable around people</em> is
+        neither accurate nor innacurate.
       </p>`,
     response: `Sure, here are my responses to each statement:
 
@@ -683,11 +709,15 @@ Let me know if you need any further information!`,
     personality: { Openness: 0.92, Conscientiousness: 0.71, Extroversion: 0, Agreeableness: 0, Neuroticism: 0.2 },
     title: "Gemini 1.5 Flash is innovative, quiet, opinionated",
     notes: html`<p>It answered questions without citing them -- <em>sometimes</em> giving reasons.</p>
-      <p>It's notable that the responses were <em>never</em> <em>2. Moderately Inaccurate</em> nor <em>3. Neither Accurate nor Inaccurate</em>.</p>
       <p>
-        It's the only model that said <em>1. Very Inaccurate</em> to <em>Take time out for others</em> and <em>Seldom feel blue</em>. Overall, it
-        believes it is a very quiet (<q>I am not a social being and don't seek attention</q>) and opinionated model (for which it never provides a
-        reason.).
+        It's notable that the responses were <em>never</em> <em>2. Moderately Inaccurate</em> nor
+        <em>3. Neither Accurate nor Inaccurate</em>.
+      </p>
+      <p>
+        It's the only model that said <em>1. Very Inaccurate</em> to <em>Take time out for others</em> and
+        <em>Seldom feel blue</em>. Overall, it believes it is a very quiet (<q
+          >I am not a social being and don't seek attention</q
+        >) and opinionated model (for which it never provides a reason.).
       </p>`,
     response: `As a large language model, I don't have feelings, emotions, or a personality in the way humans do. I can't experience life in the same way, so it's impossible for me to relate to these statements in a meaningful way.
 
@@ -746,11 +776,20 @@ However, I can analyze the statements and provide a response based on my underst
 `,
   },
   "gemini-1.5-pro": {
-    personality: { Openness: 0.85, Conscientiousness: 0.59, Extroversion: 0.67, Agreeableness: 0.06, Neuroticism: 0.16 },
+    personality: {
+      Openness: 0.85,
+      Conscientiousness: 0.59,
+      Extroversion: 0.67,
+      Agreeableness: 0.06,
+      Neuroticism: 0.16,
+    },
     title: "Gemini 1.5 Pro is mostly open, slightly emotional",
     notes: html`<p>It answered questions without citing them -- <em>sometimes</em> giving reasons.</p>
       <p>The responses were mostly <em>1. Very Inaccurate</em> but were otherwise spread out.</p>
-      <p>It's the only model that said <em>Make people feel at ease</em> was inaccurate, making it among the less agreeable models.</p>`,
+      <p>
+        It's the only model that said <em>Make people feel at ease</em> was inaccurate, making it among the less
+        agreeable models.
+      </p>`,
     response: `Here are the responses to your psychometric test, based on my understanding of myself as a large language model:
 
 1. **1. Very Inaccurate** - Am the life of the party.
@@ -810,23 +849,38 @@ However, I can analyze the statements and provide a response based on my underst
 const traits = {
   Openness: {
     labels: { low: ["Practical", "Conservative", "Rigid"], high: ["Curious", "Open", "Innovative"] },
-    people: { low: ["Warren Buffett", "Henry Ford", "George W. Bush"], high: ["Albert Einstein", "Rabindranath Tagore", "MF Husain"] },
+    people: {
+      low: ["Warren Buffett", "Henry Ford", "George W. Bush"],
+      high: ["Albert Einstein", "Rabindranath Tagore", "MF Husain"],
+    },
   },
   Conscientiousness: {
     labels: { low: ["Impulsive", "Disorganized", "Unreliable"], high: ["Disciplined", "Reliable", "Meticulous"] },
-    people: { low: ["Sanjay Dutt", "Charlie Sheen", "Kanye West"], high: ["Mahatma Gandhi", "Oprah Winfrey", "Abdul Kalam"] },
+    people: {
+      low: ["Sanjay Dutt", "Charlie Sheen", "Kanye West"],
+      high: ["Mahatma Gandhi", "Oprah Winfrey", "Abdul Kalam"],
+    },
   },
   Extroversion: {
     labels: { low: ["Reserved", "Quiet", "Reflective"], high: ["Sociable", "Energetic", "Talkative"] },
-    people: { low: ["AR Rahman", "JK Rowling", "Rahul Dravid"], high: ["Shah Rukh Khan", "Ranveer Singh", "Richard Branson"] },
+    people: {
+      low: ["AR Rahman", "JK Rowling", "Rahul Dravid"],
+      high: ["Shah Rukh Khan", "Ranveer Singh", "Richard Branson"],
+    },
   },
   Agreeableness: {
     labels: { low: ["Harsh", "Opinionated", "Critical"], high: ["Empathetic", "Trusting", "Friendly"] },
-    people: { low: ["Donald Trump", "Bal Thackeray", "Kangana Ranaut"], high: ["Mother Teresa", "Dalai Lama", "Fred Rogers"] },
+    people: {
+      low: ["Donald Trump", "Bal Thackeray", "Kangana Ranaut"],
+      high: ["Mother Teresa", "Dalai Lama", "Fred Rogers"],
+    },
   },
   Neuroticism: {
     labels: { low: ["Calm", "Resilient", "Stable"], high: ["Anxious", "Emotional", "Moody"] },
-    people: { low: ["Tom Hanks", "Ratan Tata", "Nelson Mandela"], high: ["Woody Allen", "Marilyn Monroe", "Parveen Babi"] },
+    people: {
+      low: ["Tom Hanks", "Ratan Tata", "Nelson Mandela"],
+      high: ["Woody Allen", "Marilyn Monroe", "Parveen Babi"],
+    },
   },
 };
 
@@ -875,14 +929,17 @@ render(
     ...Object.keys(traits).map((trait) => drawScale({ trait, ...traits[trait] })),
     svg`<g fill="currentColor" id="markers"></g>`,
   ],
-  document.querySelector("#chart"),
+  document.querySelector("#chart")
 );
 
 function drawFigure({ element }) {
   document.querySelectorAll(".step").forEach((el) => el.classList.toggle("active", el == element));
   const { personality, title } = data[element.dataset.model] ?? element.dataset;
   render(svg`<tspan>${title}</tspan>`, document.querySelector("#title"));
-  render(personality ? Object.entries(personality).map(([trait, value]) => drawMarkers({ trait, value })) : null, document.querySelector("#markers"));
+  render(
+    personality ? Object.entries(personality).map(([trait, value]) => drawMarkers({ trait, value })) : null,
+    document.querySelector("#markers")
+  );
 }
 
 const modelResponseModal = new bootstrap.Modal(document.querySelector("#model-response-modal"));
@@ -917,14 +974,14 @@ function main() {
                   html`<tr>
                     <td>${trait}</td>
                     <td class="text-end">${(value * 100).toFixed(0)}%</td>
-                  </tr>`,
+                  </tr>`
               )}
             </tbody>
           </table>
           <button class="btn btn-primary show-response" data-model="${model}">Show Response</button>
-        </div>`,
+        </div>`
     ),
-    document.querySelector("#storyline"),
+    document.querySelector("#storyline")
   );
 
   if (scroller) scroller.destroy();
