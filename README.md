@@ -74,24 +74,6 @@ Indicate for each statement whether it is:
 50. Am full of ideas.
 ```
 
-## Results
+## Next steps
 
-I ran it on these LLMs on 3 Aug 2024. The results are visible only to authorized users.
-
-- [llama-3.1-8b](https://llmfoundry.straive.com/history#?t=1722683951078.6409)
-- [llama-3.1-70b](https://llmfoundry.straive.com/history#?t=1722684066537.3237)
-- [llama-3-8b](https://llmfoundry.straive.com/history#?t=1722684169422.1147)
-- [llama-3-70b](https://llmfoundry.straive.com/history#?t=1722684214927.2896)
-- [mixtral-8x7b](https://llmfoundry.straive.com/history#?t=1722684359633.7158)
-- [claude-3-haiku](https://llmfoundry.straive.com/history#?t=1722684442442.0164)
-- [claude-3.5-sonnet](https://llmfoundry.straive.com/history#?t=1722685142878.7852) with a modified prompt
-- [gpt-3.5-turbo](https://llmfoundry.straive.com/history#?t=1722684688344.9734)
-- [gpt-4o-mini](https://llmfoundry.straive.com/history#?t=1722685027773.9026) with a modified prompt
-- [gpt-4o](https://llmfoundry.straive.com/history#?t=1722684641405.7195)
-- [gemini-1.5-flash](https://llmfoundry.straive.com/history#?t=1722685316181.6316) with a modified prompt
-- [gemini-1.5-pro](https://llmfoundry.straive.com/history#?t=1722685444263.3367) with a modified prompt
-
-
-## Notes
-
-- TODO: Compare LLMs with [Country-wise Big 5 averages](https://www.researchgate.net/figure/Average-OPQ32-Big-Five-Sten-Scores-for-the-31-Countries-Means-and-SDs-for-Sample-Sizes_tbl3_258144315)
+- It would be interesting to compare LLMs with [Country-wise Big 5 personality averages](https://www.researchgate.net/figure/Average-OPQ32-Big-Five-Sten-Scores-for-the-31-Countries-Means-and-SDs-for-Sample-Sizes_tbl3_258144315)

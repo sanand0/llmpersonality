@@ -7,9 +7,9 @@ This is the transcript of the talk at [TEDx MDI Gurgaon, 2024](https://www.ted.c
 Links used:
 
 - [Slides for the talk](2024-08-10-TEDx-MDI-Gurgaon-LLM-Psychology.pptx)
-- [Visualize LLM Hallunications with logprobs](https://llmviz.straive.app)
-- [LLMs guess random numbers](https://llmrandom.straive.app)
-- [LLM Personality](https://llmpersonality.straive.app)
+- [Visualize LLM Hallunications with logprobs](https://sanand0.github.com/llmviz/)
+- [LLMs guess random numbers](https://sanand0.github.com/llmrandom/)
+- [LLM Personality](https://sanand0.github.com/llmpersonality/)
 
 # The Psychology of LLMs
 
@@ -94,7 +94,7 @@ and we have them. Now, all we can do is just poke around with this, see what it 
 see how they work. And in a sense, I love doing this. Shiny new thing, let's tinker around
 with it.
 
-[So let me explore large language models with you](https://llmviz.straive.app).
+[So let me explore large language models with you](https://sanand0.github.com/llmviz).
 
 First, let's try and understand how
 exactly they work. Supposing I want to ask an LLM, a question. Like, let's say, yeah, this is a good one.
@@ -183,7 +183,7 @@ and finally comes up with 47, not 37, but still a number that ends with 7 seems 
 Let's try again pick a random number that ends from 1 to 100 again this is a prime
 number. Let's try once again. It comes up with 68.
 
-[We can keep doing this a large number of times so let's see what we actually get when we run this.](https://llmrandom.straive.app/)
+[We can keep doing this a large number of times so let's see what we actually get when we run this.](https://sanand0.github.com/llmrandom/)
 
 Let's start with GPT. [Specifically I'm going to start with GPT 3.5 Turbo which is a slightly old
 model.](https://chatgpt.com/share/73489a8d-111a-40e2-a695-953c36e7d702)
